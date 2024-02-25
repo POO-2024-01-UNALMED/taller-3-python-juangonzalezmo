@@ -1,7 +1,7 @@
 class TV:
     numTV=0
     def __init__(self,marca,estado):
-        self.marca=marca
+        self._marca=marca
         self.estado=estado
         self.canal=1
         self.volumen=1
@@ -41,9 +41,9 @@ class TV:
     def getMarca(self):
         return self.marca
     def setMarca(self,marca):
-        self.marca=marca
+        self._marca=marca
     def getCanal(self):
-        return self.marca
+        return self._marca
     def setCanal(self,canal):
         
         if self.estado==True and canal>=1 and canal<=120:
