@@ -38,3 +38,4 @@ class Control:
         return self.tv
     def setTv(self,tv):
         self.tv=tv
+        
