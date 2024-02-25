@@ -12,10 +12,10 @@ class TV:
     def nuevoTV(cls):
 
         cls.numTV+=1
-    def getNumTV(self):
-        return self.numTV
-    def setNumTV(self,numTV):
-        self.numTV=numTV
+    def getNumTV(cls):
+        return cls.numTV
+    def setNumTV(cls,numTV):
+        cls.numTV=numTV
 
     def turnOn(self):
         self.estado=True
@@ -62,3 +62,4 @@ class TV:
         return self.control
     def setControl(self,control):
         self.control=control
+    
